@@ -1,27 +1,59 @@
 # BlogNg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A personal blog developed with the Angular framework and the Scully static site generator. This project is a platform to share articles, tutorials, and insights on web development.
+![alt text](print1.png)
+![alt text](print2.png)
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**: Framework for building dynamic web applications.
+- **Scully**: Static site generator for Angular.
+- **RxJS**: Library for reactive programming with observables.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Listing of published articles.
+- Integration with Scully for static page generation.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/deyvidsalvatore/BlogNg.git
+   ```
 
-## Running unit tests
+2. Navigate to the project directory:
+   ```bash
+   cd BlogNg
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Running end-to-end tests
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Open your browser at `http://localhost:4200`.
 
-## Further help
+## Generate Static Site
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To generate the static site with Scully, run:
+```bash
+ng build --prod
+npx scully
+```
+
+The generated files will be in the `dist` folder.
+
+## Contribution
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
