@@ -1,8 +1,8 @@
 # BlogNg
 
 A personal blog developed with the Angular framework and the Scully static site generator. This project is a platform to share articles, tutorials, and insights on web development.
-![alt text](print1.png)
-![alt text](print2.png)
+![alt text](docs/print1.png)
+![alt text](docs/print2.png)
 
 ## Technologies Used
 
