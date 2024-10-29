@@ -1,0 +1,11 @@
+identifier: ma2du3i5g8p26fv8
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: BlogNg
+homeFolder: C:\Apps\BlogNg
+distFolder: ./dist/blog-ng
+outDir: C:\Apps\BlogNg\dist\static
+handle404: ''
+allowErrorCollect: false
