@@ -5,12 +5,21 @@ import { ContactComponent } from './modules/contact/contact.component';
 const routes: Routes = [
   {
     path: 'contact',
-    component: ContactComponent
-  }
+    component: ContactComponent,
+  },
+  {
+    path: 'articles',
+    loadChildren: () =>
+      import('./modules/articles/articles.module').then(
+        (m) => m.ArticlesModule
+      ),
+  },
+  { path: '', pathMatch: 'full', redirectTo: 'articles'},
+  { path: '**', redirectTo: 'articles' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
