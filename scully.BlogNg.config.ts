@@ -1,14 +1,17 @@
-import { ScullyConfig } from "@scullyio/scully";
+import { ScullyConfig } from '@scullyio/scully';
 
-export const scullyConfig: ScullyConfig = {
+export const config: ScullyConfig = {
   projectRoot: './src',
   projectName: 'BlogNg',
+  distFolder: './dist/blog-ng',
   outDir: './dist/static',
+  defaultPostRenderers: [],
   routes: {
     '/posts/:id': {
       type: 'contentFolder',
       id: {
         folder: "./mdfiles"
       }
-    },}
-}
+    },
+  }
+};
